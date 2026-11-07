@@ -1,0 +1,147 @@
+/* DESIGN AND USER EXPERIENCE: Champagne gold, Montserrat, soft colors, fast loading */
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --champagne-gold: #D4AF37; /* Champagne gold to present quality and elegance -  */
+  --soft-cream: #FFFAF5; /* Soft colors for eye comfortability */
+  --soft-beige: #F8F0E8;
+  --black: #111;
+}
+html { font-size:16px; }
+body {
+  font-family: 'Montserrat', sans-serif; /* Montserrat font for body texts - */
+  font-size:1rem;
+  background: var(--soft-cream);
+  color: #333;
+  line-height:1.8;
+  letter-spacing:0.02em;
+}
+h1,h2,h3 { font-family: 'Montserrat', sans-serif; font-weight:700; }
+h2 { font-size:1.5rem; color:var(--black); border-bottom:3px solid var(--champagne-gold); display:inline-block; margin-bottom:15px; padding-bottom:5px; }
+
+/* Header - champagne gold quality and elegance */
+header { background:var(--black); color:white; padding:1.5em; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+header h1 { color: var(--champagne-gold); letter-spacing:0.2em; font-size:2rem; }
+.tagline { color: var(--champagne-gold); font-weight:600; }
+nav { display:flex; justify-content:center; gap:1em; margin-top:1em; flex-wrap:wrap; }
+nav a { color: var(--champagne-gold); text-decoration:none; font-weight:600; }
+nav a:hover { color:white; text-decoration:underline; }
+nav a:focus { outline:2px solid var(--champagne-gold); }
+
+/* Hero banner: Hero banner with signature scent */
+.hero { background: var(--soft-beige); text-align:center; padding:2.5em 1.5em; }
+.hero-text { margin-bottom:1.5em; }
+.hero img { width:100%; max-width:800px; height:auto; border-radius:8px; }
+
+/* Layout - Flexbox */
+.products { display:flex; flex-direction:row; justify-content:center; align-items:stretch; gap:2%; width:100%; flex-wrap:wrap; margin-top:1.5em; }
+.product { width:30%; background:white; border:1px solid #ddd; color:var(--black); box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:1.2em; text-align:center; border-radius:6px; }
+.product { width:100%; height:18em; object-fit:cover; } /* High quality images with professional bottles and botanical backgrounds */
+.price { font-weight:bold; font-size:1.2rem; }
+.filters { display:flex; justify-content:center; gap:1em; flex-wrap:wrap; margin:1.5em 0; background:white; padding:1em; border-radius:6px; }
+
+/* Contact Box - */
+<section id="contact">
+<h2>Contact Page</h2>
+<div class="contact-box">
+<p><strong>Email:</strong> info@Allures.co.za</p>
+<p><strong>Operating Hours:</strong>
+Mon-Fri 10am-6pm</p>
+</div>
+
+<!-- Interactive Map -->
+<h3> Find Our Strore</h3>
+
+<div id="map"></div>
+
+.contact-box { background:var(--black); color:white; padding:1.5em; border:2px solid var(--champagne-gold); border-radius:8px; text-align:center; line-height:2.2; margin-bottom:1.5em; }
+.contact-box a { color:var(--champagne-gold); }
+.contact-box strong { color:var(--champagne-gold); }
+
+/* Payment badges - PayShap and Capitec to build trust */
+.payment-badges { background:white; padding:1.5em; text-align:center; margin-top:1.5em; border:1px solid var(--champagne-gold); border-radius:6px; }
+.payment-badges h3 { color:var(--black); }
+
+/* Forms & Buttons */
+form { max-width:500px; margin:1.5em auto; display:flex; flex-direction:column; gap:0.8em; }
+label { font-weight:600; font-size:0.9rem; }
+input, textarea, select { padding:0.8em; border:1px solid #ccc; border-radius:4px; font-family:'Montserrat', sans-serif; }
+button { background:var(--black); color:white; border:none; padding:0.9em; font-weight:700; border-radius:4px; cursor:pointer; font-family:'Montserrat', sans-serif; }
+button:hover { background:var(--champagne-gold); color:var(--black); }
+button:focus { outline:2px solid var(--champagne-gold); }
+button:active { transform:scale(0.98); }
+.product:hover { box-shadow:0 8px 20px rgba(0,0,0,0.15); }
+
+/* Responsive - Breakpoints */
+@media (max-width:1024px) { .product { width:45%; } }
+@media (max-width:768px) { .products { flex-direction:column; } .product { width:90%; margin:0 auto 1em auto; } nav { flex-direction:column; } .filters { flex-direction:column; } }
+@media (max-width:480px) { h1 { font-size:1.4rem; } .product uh { width:100%; } body { font-size:0.95rem; } }
+
+footer { background:var(--black); color:#aaa; text-align:center; padding:2em; font-size:0.9rem; }
+/* Interactive Map Styling*/
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 2px solid #d4af37;
+
+}
+
+/* Map Heading*/
+/* INTERACTIVE MAP - ALLURES LOCATION */
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    border: 3px solid var(--champagne-gold);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Map heading */
+
+#contact h3 {
+    color: var(--champagne-gold);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive map for mobile devices */
+
+@media (max-width: 768px) {
+    #map {
+        height: 300px;
+        width: 100%; 
+
+/* PERFUME PRODUCT IMAGES*/
+
+.product-image {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* PRODUCT IMAGE CONTAINER */
+
+.product-card {
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MAKE IMAGES RESPONSIVE */
+
+@media (max-width: 768px) {
+    .product-image {
+        height: 220px;
+    }
+}
+
+
+    }
+}
